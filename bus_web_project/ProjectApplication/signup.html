@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--*****************************************************************************
+*** 
+#Original Author: Michael Robins
+#Date Created: September 11, 2022                                        
+Current Version: 0.0                             
+#Date Last Modified: September 22, 2022                               
+#))Modification log: 
+    
+    Version: 0.0 - 9/11/22 - Mod Log and essential files | pulled in script.js . | pulled in style.css | head tags with meta tags created | Name attribute added to meta elements ("author", "description", "keywords", "viewport") | Titled 'Reverb' | customized navbar centered at the top of the page below h1 and span element | placed horizontal ruler below navbar | 'Join our newsletter' form layout created with three text boxes & two buttons |
+
+    Version: 1.0 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. | 
+     
+                              
+                            
+ ********************************************************************************
+--->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Michael Robins" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Rhythm & Muse</title>
+  </head>
+  <body>
+    <header>
+      <h1>Stay in touch</h1>
+      <span id="menu_control"><a href="index.html">R & M</a></span> <!-- <span> -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</li>
+          <li><a href="faqs.html">FAQs</li>
+          <li><a href="newsletter.html">Newsletter | Sign-up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- -->
+    <section>
+      <form id="newsletter_form">
+      <h2>Stay informed. Join our news letter.</h2>
+        <div>
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name"/><span class="err"></span>
+        </div>
+        <div>
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="last_name"/>
+          <span class="err"></span>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email"/>
+          <span class="err"></span>
+        </div>
+        <div>
+          <input type="submit" id="join_newsletter" value="Join!"/>
+          <input type="button" id="clearForm" value="Clear Form"/>
+          <span class="err"></span>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>  
+    <script src="script.js"></script>
+    <script src="query.js"></script>
+  </body>
+</html>

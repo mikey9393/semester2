@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../temp/jquery-ui-1.13.2.custom"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BUS_APPLICATION_PROJECT"
+	}
+}

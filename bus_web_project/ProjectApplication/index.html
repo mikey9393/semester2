@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--*****************************************************************************
+*** 
+#Original Author: Michael Robins
+#Date Created: August 25, 2022                                        
+Current Version: 0.0                             
+#Date Last Modified: September 22, 2022                               
+#))Modification log: 
+    
+    Version: 0.0 - 8/25/22 - Mod Log and essential files and scripts created | Initialized html page wih meta tags with name attributes["author","description", "keywords", "viewport" for device configuration] | style.css pulled | navbar created using bootstrap framework | Link to 
+    
+    Version: 0.5 - 9/11/22 - Bootstrap pulled for navbar | 3 carousel images loaded | Changed 'Contact' in navbar to 'Newsletter' & renamed title respectively | Changed 'FAQs' to 'FAQs | Contact' and renamed html file accordingly | lorum ipsum for placeholder added for bio/company statement |  
+
+    Version: 1.0 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. | 
+                              
+                            
+ ********************************************************************************
+--->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Michael Robins" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport"content="width=device-width, initial-scale=1" /> 
+    <title>Rhythm & Muse</title>
+    <link href="style.css" rel="stylesheet" />
+    <!-- insert favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+  <body>
+    <header>
+      <b><a href="landpage.html">Landpage</a></b>
+      <div>
+        <small><a id="news_letter" href="newsletter.html">Join our Newsletter</a></small>
+        <small><a href="faqs.html">Contact Us</a></small>
+        <!-- insert animated banner  -->
+        
+      </div>
+      
+      <!-- insert logo -->
+      <h1>Rhythm & Muse</h1>
+      
+      <nav><!-- <nav> -->
+        <span id="menu_control"><a href="index.html">R & M</a></span>
+        <ul>
+          <li><a href="index.html" id="home">Home</a></li>&nbsp;
+          <li><a href="faqs.html" id="faqs">FAQs</a></li>&nbsp;
+          <li>Newsletter</li>&nbsp;
+          <li><a href="specials.html" id="home">Specials</a></li>&nbsp;
+        </ul><!-- </ul> -->
+      </nav><!-- </nav> -->
+    </header><!-- </header> -->
+    
+    
+    <section><!-- category menu -->
+     
+      <div id="shopping_cart">
+        <ul id="instruments">
+          <li>Electric Guitars</li>
+          <li>Acoustic Guitars</li>
+          <li>Steel Guitars</li>
+          <li>Pianos</li>
+          <li>Organs</li>
+          <li>Synthesizers</li>
+          <li>Sitars</li>
+          <li>Banjos</li>
+          <li>Percussion</li>
+          <li>Amps & Effects</li>
+          <li>Recording</li>
+          <li>Basses</li>
+          <li>Guitars</li>
+          <li>Live Sound</li>
+          <li>Microphones</li>
+          <li>Accessories</li>
+          <li>Speakers</li>
+          <li>Clothing & Collectibles</li>
+          <li>Sheet Musics</li>
+          <li>Band & Orchestra</li>
+        </ul><!-- #instruments -->
+      </div> <!-- .shopping_cart -->
+    </section><!-- </section> -->
+
+  
+    <footer>
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a> 
+    </footer>
+    <!-- Scripts -->
+    <script src="events.js"></script>
+    <!-- Scripts -->
+  </body> <!-- </body> -->
+</html>
+ 

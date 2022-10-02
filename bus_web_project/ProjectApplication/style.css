@@ -1,0 +1,165 @@
+/***************************************
+***
+*Original Author: Michael Robins                                  
+*Date Created:  August 25, 2022                                   
+*Version: 0.0                                              
+*Date Last Modified: September 10, 2022                             
+*Modified by: Michael Robins.                                         
+*Modification log: 
+
+    Version: 0.0 - 8/25/22 - Mod Log and essential files and scripts created | Bootstrap Version 5.2 pulled
+    Version: 0.5 - 9/23/22 - Removed class selector 'openLandpage' Commented out animation name: color_change and placed at the bottom of the page under the commented-out keyframes. 
+    **
+***************************************/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Oswald:wght@300&display=swap');
+/*General layout*/
+
+
+
+/* Format header and footers */
+
+
+ /*<-- toggle shopping_cart */
+
+
+
+
+
+/***********************/
+html {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(250, 250, 250) 0%, rgb(255, 255, 255) 100%);
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Bitter', serif;
+}
+header span>a{
+  margin-bottom: -40px;
+  
+}
+span>a{
+  text-decoration: none;
+  border: 1px dotted black;
+  border-radius: 7%;
+  margin-left: 0%;
+  padding: 2px;
+  height: 1.5em;
+}
+
+nav ul, nav span {
+  /* border-bottom: 1px dotted black; */
+  display: flex;
+  justify-content: space-around;
+
+}
+
+ul, li a
+{
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size:14px;
+}
+
+
+
+
+/********* faqs. ***********/
+/*use class selector to show the qa's*/
+.questions{
+  border: 1px dotted rgb(207, 128, 128);
+}
+.answers{
+  display:none;
+} 
+
+
+
+
+/*menu_control*/
+div#shopping_cart,#instruments { 
+  margin-top: -8px;
+  display:flex;
+  /* flex-direction: column; */
+  flex-flow:column;
+  align-items: flex-start;
+  border-bottom: 1px dotted red;
+  
+}
+
+
+/* div.shopping_cart{
+  /* box-sizing: content-box;
+  
+  
+
+}  */
+
+
+
+
+
+footer{
+  display: flex;
+  flex-direction: column-reverse;
+  align-self:baseline;
+  
+}
+
+
+#menu_control{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -9px;
+}
+
+#subscribe_button {
+  float: right;
+}
+#newsletter_form >div{
+  padding: 10px;
+}
+
+#confirmBox {
+  border: 2px solid black;
+  width: 2rem;
+  height: 2rem;
+}
+
+#main_text {
+  margin-top: 20%;
+}
+
+
+
+span.err{
+  color:red;
+}
+
+/* Carousel css */
+
+#display_panel{
+  width: 300px;
+  overflow: hidden;
+  float: left;
+  height: 125px;
+}
+#image_list{
+  position: relative;
+  left: 0px;
+  width: 900px;
+  list-style: none;
+}
+#image_list li{
+  float: left;
+  width: 100px;
+}
+#image_list li img{
+  width: 95px;
+}
+
+
+

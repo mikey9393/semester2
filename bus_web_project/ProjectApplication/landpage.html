@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--*****************************************************************************
+*** 
+#Original Author: Michael Robins
+#Date Created: August 25, 2022                                        
+Current Version: 0.0                             
+#Date Last Modified: September 22, 2022                               
+#))Modification log: 
+    
+    Version: 0.0 - 8/25/22 - Mod Log and essential files and scripts created | Initialized html page wih meta tags with name attributes["author","description", "keywords", "viewport" for device configuration] | style.css pulled | navbar created using bootstrap framework | Link to 
+    
+    Version: 0.5 - 9/11/22 - Bootstrap pulled for navbar | 3 carousel images loaded | Changed 'Contact' in navbar to 'Newsletter' & renamed title respectively | Changed 'FAQs' to 'FAQs | Contact' and renamed html file accordingly | lorum ipsum for placeholder added for bio/company statement |  
+
+    Version: 0.5 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. |
+                              
+                            
+ ********************************************************************************
+--->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Michael Robins" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rhythm & Muse</title>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
+        crossorigin="anonymous"></script>
+    <script src="js/universal_date_picker.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+  <body>
+    
+    <input type="text" id="date-field">
+    <footer>
+      <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a>
+    </footer>
+    <script src="events.js"></script>
+    <!--  -->
+    
+    
+    
+    <script src="local/fr.js"></script>
+    <script src="local/en.js"></script>
+    
+    <script>
+      $.udpicker.setDefaults(en);
+    </script>
+    <!--  -->
+  </body>
+</html>
+

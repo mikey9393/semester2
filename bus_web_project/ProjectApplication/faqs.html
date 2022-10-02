@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<!--*****************************************************************************
+*** 
+#Original Author: Michael Robins
+#Date Created: September 10, 2022                                        
+Current Version: 1.5                             
+#Date Last Modified: September 22, 2022                               
+#))Modification log: 
+    
+    Version: 0.0 - 9/10/22 - Meta tags created in the head (author, description, keywords, viewport set to mobile first; initial-scale=1) | Linked css stylesheet in head tags as well | Q&A Section created in main tag | within main tag two new containers created in div tags | .questions .anwers classes created in div tags| copy/pasted Lorem Ipsum to fill content | pulled in script.js |
+    
+    Version: 1.0 - 9/11/22 - Contact Form created at the bottom of page with three labels [Email, phone, message box] & a submit button |
+
+    Version: 1.5 - 9/21/22 - Reorganized main element #faqs | Cleaned up code, closed open div tags |  placed id attributes inside #faqs div elements. Their values set to semantically reflect their nextSibling h2 element text values | 
+
+    Version: 2.0 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. | Under the h1 element: Modified href value within the span element to link to the index.html page, rather then to the landpage.html. |  
+
+                            
+ ********************************************************************************
+--->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Michael Robins" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Rhythm & Muse</title>
+  </head>
+  <!------------------------------------------------------------------------->
+  <body>
+    <header>
+      <h1>Help Center</h1>
+      <span id="menu_control"><a href="index.html">R & M</a></span>
+      <label for="searchBar">What can we help you with?</label> 
+      <input type="search" placeholder="Search..." id="searchBar"></input>
+    </header>
+    <main id="faqs"> 
+      <h2>Answers to Frequently Asked Questions</h2>
+      <div id="technical_faqs">
+        <h3>Technical</h3>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis?</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis?</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis?</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+      </div> <!-- #technical_faq -->
+      <h3>Shipping & Billing</h3>
+      <div id="shipbill_faqs">
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis?</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis?</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis?</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+      </div> <!-- #shipbill_faq -->
+      <h3>Account</h3>
+      <div id="account_faqs">
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+        </div> 
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+        </div>
+        <div class="answers">
+        <p>
+          Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+        </p>
+      </div>
+      </div> <!-- #account -->
+      <h3>Terms & Conditions</h3>
+      <div id="terms_faqs">
+      <div class="questions">
+        <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+      </div>
+      <div class="answers">
+        <p>
+          Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+        </p>
+      </div>
+      <div class="questions">
+        <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+      </div>
+      <div class="answers">
+        <p>
+          Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+        </p>
+      </div>
+      <div class="questions">
+        <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+      </div>
+      <div class="answers">
+      <p>
+        Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+      </p>
+    </div>
+      </div> <!-- #terms_faqs -->
+      <h3>Customer Support</h3>
+      <div id="custSupport_faqs">
+    <div class="questions">
+      <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+    </div>
+    <div class="answers">
+      <p>
+        Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+      </p>
+    </div>
+    <div class="questions">
+      <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+    </div>
+    <div class="answers">
+      <p>
+        Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+      </p>
+    </div>
+    <div class="questions">
+      <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+    </div>
+    <div class="answers">
+      <p>
+        Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+      </p>
+    </div>
+      </div> <!-- #customer_support -->
+      <h3>Return/Exchange/Sell Policies</h3>
+      <div id="exchgePolicy_faqs">
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div>
+        <div class="questions">
+          <p>Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis.</p>
+        </div>
+        <div class="answers">
+          <p>
+            Egestas integer eget aliquet nibh praesent tristique. In pellentesque massa placerat duis. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl.
+          </p>
+        </div> 
+      </div><!-- #exchgePolicy_faqs-->
+    </main> <!-- #faqs -->
+<!-- Contact Form -->    
+    <section>
+     <h1>Contact Form</h1> 
+      <form> 
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter your email..."></input>
+        </div><!-- #email -->
+        
+        <div>
+          <label for="phone">Phone number:</label>
+          <input type="text" id="phone" name="phone"></input>
+        </div><!-- #phone -->
+        
+        
+        <div>
+          <label for="message">Leave a detailed message.</label>
+          <input type="text" id="message"></input>
+        </div><!-- #message -->
+
+        <input type="submit" id="submitContact" ></input>
+      </form>
+    </section>
+<!-- Contact Form -->
+    <footer>
+      <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="query.js"></script>
+  </body>
+</html>
