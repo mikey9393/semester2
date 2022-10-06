@@ -2,9 +2,6 @@
 	"folders": [
 		{
 			"path": ".."
-		},
-		{
-			"path": "../../temp/jquery-ui-1.13.2.custom"
 		}
 	],
 	"settings": {

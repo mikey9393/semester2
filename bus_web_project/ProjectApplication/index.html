@@ -13,6 +13,8 @@ Current Version: 0.0
     Version: 0.5 - 9/11/22 - Bootstrap pulled for navbar | 3 carousel images loaded | Changed 'Contact' in navbar to 'Newsletter' & renamed title respectively | Changed 'FAQs' to 'FAQs | Contact' and renamed html file accordingly | lorum ipsum for placeholder added for bio/company statement |  
 
     Version: 1.0 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. | 
+
+    Version: 1.0 - 10/5/22 - Pulled in script from cdn version 'jquery-3.6.0.min.js' 
                               
                             
  ********************************************************************************
@@ -32,6 +34,8 @@ Current Version: 0.0
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- Insert script -->
+    <script src="jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header>
@@ -39,7 +43,7 @@ Current Version: 0.0
       <div>
         <small><a id="news_letter" href="signup.html">Join our Newsletter</a></small>
         <small><a href="faqs.html">Contact Us</a></small>
-        <!-- insert animated banner  -->
+        <!-- insert jquery slider   -->
         
       </div>
       <!-- insert logo -->
@@ -109,7 +113,7 @@ Current Version: 0.0
         <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a> 
     </footer>
     <!-- Scripts -->
-    <script src="events.js"></script>
+    <script src="script.js"></script>
     <!-- Scripts -->
   </body> <!-- </body> -->
 </html>

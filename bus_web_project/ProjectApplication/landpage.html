@@ -13,6 +13,8 @@ Current Version: 0.0
     Version: 0.5 - 9/11/22 - Bootstrap pulled for navbar | 3 carousel images loaded | Changed 'Contact' in navbar to 'Newsletter' & renamed title respectively | Changed 'FAQs' to 'FAQs | Contact' and renamed html file accordingly | lorum ipsum for placeholder added for bio/company statement |  
 
     Version: 0.5 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. |
+
+    Version: 0.5 - 10/5/22 - replaced old version library and pulled in  jquery-3.6.0.min.js | removed initial day-picker, removed day-picker method call in script.js file. | pulled in https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css stylesheet for jquery plugin aesthetic and functioning. | removed input #date-field from DOM | Renamed 'events.js' to original name 'script.js' for simplicity of the current assignment. | 
                               
                             
  ********************************************************************************
@@ -27,10 +29,7 @@ Current Version: 0.0
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rhythm & Muse</title>
     <!--  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
-        crossorigin="anonymous"></script>
-    <script src="js/universal_date_picker.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
     <!--  -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -40,22 +39,18 @@ Current Version: 0.0
   </head>
   <body>
     
-    <input type="text" id="date-field">
+    
     <footer>
       <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
       <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a>
     </footer>
-    <script src="events.js"></script>
-    <!--  -->
+    <script src="script.js"></script>
+    <!-- jquery slider hero images. Horizontal or vertical  -->
     
     
     
-    <script src="local/fr.js"></script>
-    <script src="local/en.js"></script>
+   
     
-    <script>
-      $.udpicker.setDefaults(en);
-    </script>
     <!--  -->
   </body>
 </html>
