@@ -14,13 +14,56 @@ Current Version: 0.0
 
     Version: 0.5 - 9/23/22 - Pulled in customized favicon files from favicon.io generator. | Favicon set to display 'R&M' to fit. Added a new text content 'Rhythm & Muse' in the title element replace temporary placeholder title. | Created 'images' directory - dropped img src files (<footer> youtube.png, twitter.png) into the 'images' directory | Modified the src attribute to link 'images' content | Modified all script tags to be the same on all html files, script tags to jQuery libray had differing src attributtes.. |
 
-    Version: 0.5 - 10/5/22 - replaced old version library and pulled in  jquery-3.6.0.min.js | removed initial day-picker, removed day-picker method call in script.js file. | pulled in https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css stylesheet for jquery plugin aesthetic and functioning. | removed input #date-field from DOM | Renamed 'events.js' to original name 'script.js' for simplicity of the current assignment. | 
+    Version: 0.5 - 10/5/22 - replaced old version library and pulled in  jquery-3.6.0.min.js | removed initial day-picker, removed day-picker method call in script.js file. | pulled in https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css stylesheet for jquery plugin aesthetic and functioning. | removed input #date-field from DOM | Renamed 'events.js' to original name 'script.js' for simplicity of the current assignment. | removed cdn scripts, replaced minified versions with full "https://code.jquery.com/jquery-3.6.0.js", and
+"https://code.jquery.com/ui/1.13.2/jquery-ui.js" |
+
                               
                             
  ********************************************************************************
 --->
 
 <html lang="en">
+    <!-- style sheets -------->
+    <!-- insert jquery UI styling -->
+    <link href="jquery_style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- insert favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- insert external css for styling widgets -->
+    <style type="text/css">
+      /* On the main scroller, use relative positioning. This allows the option of adding things such as edge overlays later if desired */
+      #scroller {
+          position: relative;
+      }
+      /* For the inner holder, we clip anything that runs over, via "overflow: hidden".  We position the holder to fully fill its parent, the #scroller div. */
+      #scroller .innerScrollArea {
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+      }
+      /* On the unordered list that holds our photos, we remove the default margin and padding.  We also use "position: relative" so the list items can be laid out in a horizontal row. */
+      #scroller ul {
+          padding: 0;
+          margin: 0;
+          position: relative;
+      }
+      /* On the individual list items, we remove the default padding, margin and list bullets.  The position is set to absolute; we'll use JavaScript to set the precise left positioning value. */
+        
+      #scroller li {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          position: absolute;
+      }
+  </style> <!-- Author: Nathan Rohler. Styling pulled in from DWUser.com  -->
+  </head>
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Michael Robins" />
@@ -28,31 +71,47 @@ Current Version: 0.0
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rhythm & Muse</title>
-    <link href="jquery_style.css" rel="stylesheet">
-    
-    <!--  -->
-    
-    <!--  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-  </head>
-  <body>
     
     
+  <body><!-- jquery slider hero images. Horizontal or vertical  -->
+    <main>
+      
+      <div id="scroller_coaster" style="width: 550px; height: 400px; margin: 0 auto;">
+        <div class="innerScrollArea">
+            <ul>
+                <!-- Define photos here -->
+                <li><img src="images/synth-moog-model10.jpg" width="600" height="400" /></li>
+                <li><img src="images/gretsch-hollowbody-electromatic-12s-gold.png" width="267" height="400" /></li>
+                
+            </ul>
+        </div>
+    </div>
+      <!-- anchor img element to product page uri -->
+      <a href="#"><img src="images/korg-microKORG-synthesizer.jpg" alt=""></a>
+    </main>
     <footer>
       <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
       <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="YouTube icon"></a>
     </footer>
+    <!-- pull in google ajax library -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <!-- pull in jquery library &  jquery-ui.js-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="script.js"></script>
-    <!-- jquery slider hero images. Horizontal or vertical  -->
-    
-    
-    
-   
-    
-    <!--  -->
+    <!-- -->
+    <script>
+      $("main").scroller(() => {
+    const scroller = $('#scroller div.innerScrollArea');
+    const scrollerContent = scroller.children('ul');
+    scrollerContent.children().clone().appendTo(scrollerContent);
+    const curX = 0;
+    scrollerContent.children().each(() => {
+        const $this = $(this);
+        $this.css('left', curX);
+        curX += $this.outerWidth(true);  
+    })})
+    </script>
   </body>
 </html>
 

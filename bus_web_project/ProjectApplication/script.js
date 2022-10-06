@@ -4,6 +4,33 @@
 
 
 $(document).ready(() => {
+    
+        
+    
+    //
+    //
+    //
+    // //Insert scroller.
+    // $("#scroller_coaster").scrollLandpage(() => {
+    // //We first get references to the scroller and its content. 
+    //   const scroller = $('#scroller_coaster div.innerScrollArea');
+    //   const scrollerContent = scroller.children('ul');
+    // //Next, we clone the list items and add them to the list 
+    //   scrollerContent.children().clone().appendTo(scrollerContent);
+    // //Now, it's time to lay out the slides into a horizontal row.  We create an incremental counter, curX, and then loop through all of the slides, setting the 'left' CSS position.
+    //   var curX = 0;
+    //   scrollerContent.children().each(() => {
+    //     const $this = $(this);
+    //     $this.css('left', curX);
+    //     curX += $this.outerWidth(true);
+    //     });
+    //     // We need to calculate the overall width of the original (non-cloned) slides and the viewport width.  These will be used to determine the scrolling behavior, which we'll add in a second.
+    //     const fullW = curX / 2;
+    //     const viewportW = scroller.width 
+    //     // scroller.css('overflow-x', 'auto');
+        
+    // });/// Scroller. 
+    
     // Insert faq accordion. 
     $( "#technical_qa" ).accordion();
     $("#payment_processing").accordion();
